@@ -1,13 +1,9 @@
 public class TechnologyStore extends Shop{
 
-    private String name;
-    private Employee employee;
-    private DayEnum day;
-    private String inventory;
-    private String website;
-
-
-    public TechnologyStore(String name, String address, String inventory, String numberToContact, String webSite, Employee employee, DayEnum day) {
+  
+       private String inventory;
+    
+        public TechnologyStore(String name, String address, String inventory, String numberToContact, String webSite, Employee employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.inventory = inventory;
     }

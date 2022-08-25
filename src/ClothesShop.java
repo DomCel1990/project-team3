@@ -1,13 +1,10 @@
 public class ClothesShop extends Shop {
 
-     private String name;
-     private Employee employee;
-     private DayEnum day;
-     private String webSite;
      private String inventory;
 
-    public ClothesShop(String name, String address, String numberToContact, String webSite, list <Employee> employee, DayEnum day) {
+    public ClothesShop(String name, String address, String numberToContact, String webSite, list <Employee> employee, DayEnum day, String inventory) {
         super(name, address, numberToContact, webSite, employee, day);
+        this.inventory = inventory;
     }
 
 

@@ -1,6 +1,9 @@
+import java.util.List;
+
 public class CoffeeShop extends Shop{
 
-    public CoffeeShop(String name, String address, String numberToContact, String webSite, Employee employee, DayEnum day) {
+
+    public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
     }
 
@@ -17,6 +20,6 @@ public class CoffeeShop extends Shop{
 
     @Override
     public String toString() {
-        return "CoffeeShop : " + name + " " + employee + " " + day + " " + numberToContact;
+        return "CoffeeShop : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 }

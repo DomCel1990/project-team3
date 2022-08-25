@@ -1,9 +1,11 @@
+import java.util.List;
+
 public class TechnologyStore extends Shop{
 
   
        private String inventory;
     
-        public TechnologyStore(String name, String address, String inventory, String numberToContact, String webSite, Employee employee, DayEnum day) {
+        public TechnologyStore(String name, String address, String inventory, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.inventory = inventory;
     }
@@ -21,6 +23,6 @@ public class TechnologyStore extends Shop{
 
     @Override
     public String toString() {
-        return "TechnologyStore : " + name + " " + employee + " " + day + " " + numberToContact;;
+        return "TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 }

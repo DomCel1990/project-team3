@@ -18,6 +18,7 @@ public abstract class Shop {
         this.day = day;
     }
 
+
     public abstract String averageMarks();
     @Override
     public abstract String toString();

@@ -7,10 +7,13 @@ public class CoffeeShop extends Shop{
         super(name, address, numberToContact, webSite, employee, day);
     }
 
-    void addEmployee(){
+    void addEmployee(int i,Employee employee){
+        getEmployee().add(i,employee);
     }
 
-    void removeEmployee(){
+
+    void removeEmployee(int i){
+        getEmployee().remove(i);
     }
 
     @Override

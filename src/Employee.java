@@ -8,9 +8,9 @@ public class Employee {
     private boolean isMale;
     private int id;
     private String phoneNumber;
-    private EnumSet<EmployeeRoles> roles;
+    private EnumSet<EmployeeRolesEnum> roles;
 
-    public Employee(String name, String surname, int age, boolean isMale, int id, String phoneNumber,EnumSet<EmployeeRoles> roles){
+    public Employee(String name, String surname, int age, boolean isMale, int id, String phoneNumber,EnumSet<EmployeeRolesEnum> roles){
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -21,11 +21,11 @@ public class Employee {
     }
 
     //METHODS
-    public void addRoles(EmployeeRoles e){
+    public void addRoles(EmployeeRolesEnum e){
         roles.add(e);
     }
 
-    public void removeRoles(EmployeeRoles e){
+    public void removeRoles(EmployeeRolesEnum e){
         roles.remove(e);
     }
 
@@ -74,7 +74,7 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public EnumSet<EmployeeRoles> getRoles() {
+    public EnumSet<EmployeeRolesEnum> getRoles() {
         return roles;
     }
 }

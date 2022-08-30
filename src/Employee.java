@@ -1,16 +1,23 @@
-import java.util.EnumSet;
+import java.time.LocalDate;
 
 public class Employee {
 
     private String name;
     private String surname;
     private int age;
+    private int hoursWorked;
+    //si potrebbe pensare di impostarlo come un int ed indicare il numero di figli
+    private boolean hasChildren;
     private boolean isMale;
     private int id;
-    private String phoneNumber;
-    private EnumSet<EmployeeRolesEnum> roles;
+    private LocalDate dateAssumption;
 
-    public Employee(String name, String surname, int age, boolean isMale, int id, String phoneNumber,EnumSet<EmployeeRolesEnum> roles){
+    private String phoneNumber;
+    //elimino al momento la lista di impieghi fino a quando non si hanno le idee più
+    // chiare su come usarla
+    private EmployeeRolesEnum roles;
+
+    public Employee(String name, String surname, int age,int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EmployeeRolesEnum roles) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -18,63 +25,134 @@ public class Employee {
         this.id = id;
         this.phoneNumber = phoneNumber;
         this.roles = roles;
+        this.hasChildren = hasChildren;
+        this.dateAssumption = dateAssumption;
+        this.setHoursWorked(hoursWorked);
     }
-
+    //commento i metodi per non cancellarli definitivamente
     //METHODS
-    public void addRoles(EmployeeRolesEnum e){
-        roles.add(e);
+    // public void addRoles(EmployeeRolesEnum e){
+    // roles.add(e);
+    // }
+
+    // public void removeRoles(EmployeeRolesEnum e){
+    //roles.remove(e);
+    //}
+
+    public double salaryCalculator(Employee employee) {
+        double salaryBasic = 1;
+        double senioritySalary = 0;
+        double salaryExtraordinary=hoursWorked-employee.getRoles().getHourWork();
+        double familyAllowance;
+        switch (employee.getRoles()) {
+            case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
+                salaryBasic = employee.getRoles().getSalaryHour() * employee.getRoles().getHourWork();
+            }
+        }
+        //questa parte degli if è da sistemare
+        if (LocalDate.now().getYear() - dateAssumption.getYear() <= 5)
+            senioritySalary += 0;
+        else if (LocalDate.now().getYear() - dateAssumption.getYear() > 5 && LocalDate.now().getYear() - dateAssumption.getYear() <= 10)
+            senioritySalary += 100;
+        else if (LocalDate.now().getYear() - dateAssumption.getYear() > 10 && LocalDate.now().getYear() - dateAssumption.getYear() <= 15)
+            senioritySalary += 200;
+        else if (LocalDate.now().getYear() - dateAssumption.getYear() > 15)
+            senioritySalary += 300;
+
+        if (hasChildren == true)
+            familyAllowance = +200;
+        else
+            familyAllowance = +0;
+        //è da aggiungere unexception nel caso fosse minore di 0
+        if(salaryExtraordinary>0)
+            salaryExtraordinary=salaryExtraordinary*employee.getRoles().getSalaryExtraordinaryHour();
+
+
+        double totalsalary = salaryBasic + senioritySalary + familyAllowance+salaryExtraordinary;
+        return totalsalary;
+
     }
 
-    public void removeRoles(EmployeeRolesEnum e){
-        roles.remove(e);
+    public void addEmployee() {
     }
 
-
-
-    public void addEmployee(){
-    }
-
-    public void removeEmployee(){
+    public void removeEmployee() {
     }
 
     //GETTER AND SETTER FOR EACH ATTRIBUTE
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getSurname() {
         return surname;
     }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
+
     public boolean isMale() {
         return isMale;
     }
+
     public void setMale(boolean male) {
         isMale = male;
     }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public EnumSet<EmployeeRolesEnum> getRoles() {
+
+    public EmployeeRolesEnum getRoles() {
         return roles;
+    }
+
+    public boolean isHasChildren() {
+        return hasChildren;
+    }
+
+    public void setHasChildren(boolean hasChildren) {
+        this.hasChildren = hasChildren;
+    }
+
+    public LocalDate getDateAssumption() {
+        return dateAssumption;
+    }
+
+    public void setDateAssumption(LocalDate dateAssumption) {
+        this.dateAssumption = dateAssumption;
+    }
+
+    public int getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
 }

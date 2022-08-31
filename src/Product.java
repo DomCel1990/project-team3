@@ -9,7 +9,7 @@ public abstract class Product {
     public Product(String description, double price,double salePrice, String type, String serialCode) {
         this.description = description;
         this.price = price;
-        this.setSalePrice(salePrice);
+        this.salePrice=salePrice;
         this.type = type;
         this.serialCode = serialCode;
     }

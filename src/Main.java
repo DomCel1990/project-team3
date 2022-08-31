@@ -26,5 +26,6 @@ public class Main {
                 "www.ddldl.co",employeeList,DayEnum.FRIDAY);
 
         System.out.println(t.outputCalculation());
+        System.out.println(t.outputCalculation());
     }
 }

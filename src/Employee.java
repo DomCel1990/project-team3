@@ -17,7 +17,7 @@ public class Employee {
     // chiare su come usarla
     private EmployeeRolesEnum roles;
 
-    public Employee(String name, String surname, int age,int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EmployeeRolesEnum roles) {
+    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EmployeeRolesEnum roles) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -27,7 +27,7 @@ public class Employee {
         this.roles = roles;
         this.hasChildren = hasChildren;
         this.dateAssumption = dateAssumption;
-        this.setHoursWorked(hoursWorked);
+        this.hoursWorked = hoursWorked;
     }
     //commento i metodi per non cancellarli definitivamente
     //METHODS
@@ -42,7 +42,7 @@ public class Employee {
     public double salaryCalculator(Employee employee) {
         double salaryBasic = 1;
         double senioritySalary = 0;
-        double salaryExtraordinary=hoursWorked-employee.getRoles().getHourWork();
+        double salaryExtraordinary = hoursWorked - employee.getRoles().getHourWork();
         double familyAllowance;
         switch (employee.getRoles()) {
             case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
@@ -64,14 +64,16 @@ public class Employee {
         else
             familyAllowance = +0;
         //è da aggiungere unexception nel caso fosse minore di 0
-        if(salaryExtraordinary>0)
-            salaryExtraordinary=salaryExtraordinary*employee.getRoles().getSalaryExtraordinaryHour();
+        if (salaryExtraordinary > 0)
+            salaryExtraordinary = salaryExtraordinary * employee.getRoles().getSalaryExtraordinaryHour();
 
-        double totalsalary = salaryBasic + senioritySalary + familyAllowance+salaryExtraordinary;
+        double totalsalary = salaryBasic + senioritySalary + familyAllowance + salaryExtraordinary;
         return totalsalary;
     }
+
     public void addEmployee() {
     }
+
     public void removeEmployee() {
     }
 
@@ -155,14 +157,14 @@ public class Employee {
     @Override
     public String toString() {
         return "Name: " + name + "\n" +
-                "Surname:" + surname +"\n" +
-                "Age:" + age +"\n"+
-                "Hours worked: " + hoursWorked +"\n"+
-                "Has children: " + hasChildren +"\n"+
-                "Is male: " + isMale +"\n"+
-                "ID: " + id +"\n"+
-                "Date assumption: " + dateAssumption +"\n"+
-                "Phone number: " + phoneNumber + "\n"+
+                "Surname:" + surname + "\n" +
+                "Age:" + age + "\n" +
+                "Hours worked: " + hoursWorked + "\n" +
+                "Has children: " + hasChildren + "\n" +
+                "Is male: " + isMale + "\n" +
+                "ID: " + id + "\n" +
+                "Date assumption: " + dateAssumption + "\n" +
+                "Phone number: " + phoneNumber + "\n" +
                 "Roles: " + roles;
     }
 }

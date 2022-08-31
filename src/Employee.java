@@ -8,9 +8,9 @@ public class Employee {
     private boolean isMale;
     private int id;
     private String phoneNumber;
-    private EnumSet<EmployeeRolesEnum> roles;
+    private EnumSet<EmployeeRole> roles;
 
-    public Employee(String name, String surname, int age, boolean isMale, int id, String phoneNumber,EnumSet<EmployeeRolesEnum> roles){
+    public Employee(String name, String surname, int age, boolean isMale, int id, String phoneNumber,EnumSet<EmployeeRole> roles){
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -21,11 +21,24 @@ public class Employee {
     }
 
     //METHODS
-    public void addRoles(EmployeeRolesEnum e){
+    /*public boolean hasPermission(Permission permission){
+        for (EmployeeRole role : roles){
+            if (role.hasPermission(permission)){
+                return true;
+            }
+        }
+        return false;
+    }*/
+
+    public boolean hasPermission(Permission permission){
+        return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
+    }
+
+    public void addRoles(EmployeeRole e){
         roles.add(e);
     }
 
-    public void removeRoles(EmployeeRolesEnum e){
+    public void removeRoles(EmployeeRole e){
         roles.remove(e);
     }
 
@@ -74,7 +87,7 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public EnumSet<EmployeeRolesEnum> getRoles() {
+    public EnumSet<EmployeeRole> getRoles() {
         return roles;
     }
 }

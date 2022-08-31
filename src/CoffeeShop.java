@@ -2,9 +2,23 @@ import java.util.List;
 
 public class CoffeeShop extends Shop{
 
-
+    private List<CoffeProduct> inventory;
     public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
+    }
+
+    @Override
+    public double outputCalculation() {
+        double costProducts=0;
+        double costEmployee=0;
+        for (int i = 0; i < getInventory().size() ; i++) {
+            costProducts+= getInventory().get(i).getPrice();
+        }
+        for (int i = 0; i <getEmployee().size(); i++) {
+            costEmployee+=getEmployee().get(i).salaryCalculator(getEmployee().get(i));
+        }
+        double totalcost=costEmployee+costProducts;
+        return totalcost;
     }
 
     void addEmployee(int i,Employee employee){
@@ -24,5 +38,13 @@ public class CoffeeShop extends Shop{
     @Override
     public String toString() {
         return "CoffeeShop : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
+    }
+
+    public List<CoffeProduct> getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(List<CoffeProduct> inventory) {
+        this.inventory = inventory;
     }
 }

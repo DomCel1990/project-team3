@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public enum EmployeeRolesEnum {
     OWNER(0.0,0,0.0, true, true, true, true),
     MANAGER(9.375,160,11, true, true, true, true),
@@ -51,5 +53,9 @@ public enum EmployeeRolesEnum {
 
     public double getSalaryExtraordinaryHour() {
         return salaryExtraordinaryHour;
+    }
+    public static EmployeeRolesEnum getRandomRoles(){
+        Random r = new Random();
+        return values()[r.nextInt(values().length)];
     }
 }

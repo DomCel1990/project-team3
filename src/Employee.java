@@ -67,15 +67,11 @@ public class Employee {
         if(salaryExtraordinary>0)
             salaryExtraordinary=salaryExtraordinary*employee.getRoles().getSalaryExtraordinaryHour();
 
-
         double totalsalary = salaryBasic + senioritySalary + familyAllowance+salaryExtraordinary;
         return totalsalary;
-
     }
-
     public void addEmployee() {
     }
-
     public void removeEmployee() {
     }
 
@@ -154,5 +150,19 @@ public class Employee {
 
     public void setHoursWorked(int hoursWorked) {
         this.hoursWorked = hoursWorked;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "Surname:" + surname +"\n" +
+                "Age:" + age +"\n"+
+                "Hours worked: " + hoursWorked +"\n"+
+                "Has children: " + hasChildren +"\n"+
+                "Is male: " + isMale +"\n"+
+                "ID: " + id +"\n"+
+                "Date assumption: " + dateAssumption +"\n"+
+                "Phone number: " + phoneNumber + "\n"+
+                "Roles: " + roles;
     }
 }

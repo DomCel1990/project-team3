@@ -14,8 +14,8 @@ public class EmployeeTest {
                 LocalDate.of(2000, 10, 23),
                 true, 12344, "33444", EmployeeRole.MANAGER);
 
-        Assert.assertEquals(false, e.calculatorSalary() == 29);
-        Assert.assertEquals(true, e.calculatorSalary() == 2209.0);
+        Assert.assertFalse(e.calculatorSalary() == 29);
+        Assert.assertTrue(e.calculatorSalary() == 2209.0);
     }
 
     @Test

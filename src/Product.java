@@ -2,25 +2,26 @@ public abstract class Product {
 
     private String description;
     private double price;
+    private double salePrice;
     private String type;
     private String serialCode;
 
-    public Product(String description, double price, String type, String serialCode) {
+    public Product(String description, double price,double salePrice, String type, String serialCode) {
         this.description = description;
         this.price = price;
+        this.salePrice=salePrice;
         this.type = type;
         this.serialCode = serialCode;
     }
 
     @Override
     public String toString() {
-        return "Product : " +
-                "description=" + description  +
-                ", price=" + price +
-                ", type= " + type +
-                ", serilCode= " + serialCode;
+        return "Description: " + description  +"\n"+
+                "Price: " + price +"\n"+
+                "Sale price: " + salePrice +"\n"+
+                "Type: " + type +"\n"+
+                "Serial code: " + serialCode;
     }
-
     public String getDescription() {return description;}
 
     public void setDescription(String description) {this.description = description;}
@@ -36,4 +37,12 @@ public abstract class Product {
     public String getSerialCode() {return serialCode;}
 
     public void setSerialCode(String serilCode) {this.serialCode = serilCode;}
+
+    public double getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(double salePrice) {
+        this.salePrice = salePrice;
+    }
 }

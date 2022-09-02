@@ -14,12 +14,9 @@ public class Employee {
     private LocalDate dateAssumption;
 
     private String phoneNumber;
-    //elimino al momento la lista di impieghi fino a quando non si hanno le idee più
-    // chiare su come usarla
-    private EnumSet<EmployeeRole> roles;
 
-
-    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EnumSet<EmployeeRole> roles) {
+    private EmployeeRole roles;
+    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber,EmployeeRole roles) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -33,14 +30,6 @@ public class Employee {
     }
     //commento i metodi per non cancellarli definitivamente
     //METHODS
-    // public void addRoles(EmployeeRolesEnum e){
-    // roles.add(e);
-    // }
-
-    // public void removeRoles(EmployeeRolesEnum e){
-    //roles.remove(e);
-    //}
-
     /*public boolean hasPermission(Permission permission){
         for (EmployeeRole role : roles){
             if (role.hasPermission(permission)){
@@ -49,10 +38,43 @@ public class Employee {
         }
         return false;
     }*/
+/*
+    public boolean hasPermission(Permission permission){
+        return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
+    }
+*/
+
+/*
+    public void addRoles(EmployeeRole e){
+        roles.add(e);
+    }
+
+    public void removeRoles(EmployeeRole e){
+        roles.remove(e);
+        */
+
+    // public void addRoles(EmployeeRolesEnum e){
+    // roles.add(e);
+    // }
+
+    // public void removeRoles(EmployeeRolesEnum e){
+    //roles.remove(e);
+    //}
+
+    /*
+    public boolean hasPermission(Permission permission){
+        for (EmployeeRole role : roles){
+            if (role.hasPermission(permission)){
+                return true;
+            }
+        }
+        return false;
+    
 
     public boolean hasPermission(Permission permission){
         return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
     }
+    */
 
     public double salaryCalculator(Employee employee) {
         double salaryBasic = 1;
@@ -140,8 +162,7 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-    public EmployeeRole getRoles() {
+ public EmployeeRole getRoles() {
         return roles;
     }
 

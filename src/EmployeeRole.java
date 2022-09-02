@@ -20,12 +20,13 @@ public enum EmployeeRole {
         this.salaryExtraordinaryHour=salaryExtraordinaryHour;
         this.permissions = permissions;
     }
-
-    public boolean hasPermission(Permission permission){
+        public boolean hasPermission(Permission permission){
         return permissions.contains(permission);
     }
 
-    public double getSalaryHour() {
+
+
+  public double getSalaryHour() {
         return salaryHour;
     }
 

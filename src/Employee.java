@@ -12,6 +12,8 @@ public class Employee {
     private int id;
     private LocalDate dateAssumption;
 
+    public Employee(){}
+
     private String phoneNumber;
     //elimino al momento la lista di impieghi fino a quando non si hanno le idee più
     // chiare su come usarla

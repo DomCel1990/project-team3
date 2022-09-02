@@ -5,6 +5,7 @@ public class CoffeeShop extends Shop{
     private List<CoffeProduct> inventory;
     public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
+        this.setInventory(inventory);
     }
 
     @Override

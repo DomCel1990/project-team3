@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * @Author Emilio
  * Created Class Parking
@@ -11,10 +13,12 @@ public class Parking extends Car {
     private String sectors;
     private Employee employee;
 
-    //CONSTRUCTOR FOR TEST
-    public Parking(int parkingCapacity) {
-        this.parkingCapacity = parkingCapacity;
 
+    private List<Car> cars;
+    // costruttore per il metodo
+    public Parking(int parkingCapacity, List<Car> cars){
+        this.parkingCapacity=500;
+        this.cars=cars;
     }
 
     //CONSTRUCTOR
@@ -27,16 +31,20 @@ public class Parking extends Car {
     }
 
     /**
-     * @param car
+     * @param
      * @return places
      * The calculateFreePlaces method is used to calculate the free places in parking
      */
-    public String calculateFreePlaces(Car car) {
-        int places = parkingCapacity - car.calculateCar();
-        if (places <= 0) {
-            System.out.println("The parking is full");
-        } else System.out.println(places);
-        return "";
+    public String placeParking(){
+        parkingCapacity = parkingCapacity - cars.size();
+        if(parkingCapacity <= 0)
+            return "Parking is full";
+        else
+            return "Places : " + parkingCapacity;
+    }
+
+    public int maxPlaces(){
+        return parkingCapacity;
     }
 
     //GETTER AND SETTER

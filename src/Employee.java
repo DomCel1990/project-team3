@@ -13,6 +13,8 @@ public class Employee {
     private int id;
     private LocalDate dateAssumption;
 
+    public Employee(){}
+
     private String phoneNumber;
 
     private EmployeeRole roles;

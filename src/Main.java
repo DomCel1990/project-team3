@@ -14,6 +14,8 @@ public class Main {
                     LocalDate.of(r.nextInt(2000,2021),r.nextInt(1,12), r.nextInt(1,30)),true,12344,"33444", EmployeeRole.getRandomRoles()));
             System.out.println("Salary is: "+employeeList.get(i).calculatorSalary());
         }
+
+
         for (int i = 0; i <1 ; i++) {
             techProductList.add(i,new TecnologyProducts("fdff",r.nextDouble(200.0,5000.0),
                     r.nextDouble(400.0,6000.0),"dgf","fdfddf"));

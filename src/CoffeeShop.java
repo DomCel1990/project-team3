@@ -15,8 +15,9 @@ public class CoffeeShop extends Shop{
         for (int i = 0; i < getInventory().size() ; i++) {
             costProducts+= getInventory().get(i).getPrice();
         }
+
         for (int i = 0; i <getEmployee().size(); i++) {
-            costEmployee+=getEmployee().get(i).salaryCalculator(getEmployee().get(i));
+            costEmployee+=getEmployee().get(i).calculatorSalary();
         }
         double totalcost=costEmployee+costProducts;
         return totalcost;

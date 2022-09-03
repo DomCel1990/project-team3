@@ -11,8 +11,8 @@ public class Main {
         List<Employee> employeeList=new ArrayList<>();
         for (int i = 0; i <1 ; i++) {
             employeeList.add(i,new Employee("Domenico","Celani",32,r.nextInt(167,188),r.nextBoolean(),
-                    LocalDate.of(r.nextInt(2000,2021),r.nextInt(1,12), r.nextInt(1,30)),true,12344,"33444",EmployeeRolesEnum.getRandomRoles()));
-            System.out.println("Salary is: "+employeeList.get(i).salaryCalculator(employeeList.get(i)));
+                    LocalDate.of(r.nextInt(2000,2021),r.nextInt(1,12), r.nextInt(1,30)),true,12344,"33444", EmployeeRole.getRandomRoles()));
+            System.out.println("Salary is: "+employeeList.get(i).calculatorSalary());
         }
 
 
@@ -29,5 +29,12 @@ public class Main {
 
         System.out.println(t.outputCalculation());
         System.out.println(t.outputCalculation());
+        Employee e = new Employee("Domenico", "Celani", 32,
+                179,true,
+                LocalDate.of(2000,10,23),
+                true, 12344, "33444", EmployeeRole.CASHIER);
+
+        System.out.println(e.hasPermission(Permission.MANAGE_EMPLOYEE));
+        System.out.println(e.calculatorSalary());
     }
 }

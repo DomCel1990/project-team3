@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.EnumSet;
 
 public class Employee {
 
@@ -15,11 +16,9 @@ public class Employee {
     public Employee(){}
 
     private String phoneNumber;
-    //elimino al momento la lista di impieghi fino a quando non si hanno le idee più
-    // chiare su come usarla
-    private EmployeeRolesEnum roles;
 
-    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EmployeeRolesEnum roles) {
+    private EmployeeRole roles;
+    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber,EmployeeRole roles) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -31,8 +30,25 @@ public class Employee {
         this.dateAssumption = dateAssumption;
         this.hoursWorked = hoursWorked;
     }
+
+
+    public boolean hasPermission(Permission permission){
+        if (roles.hasPermission(permission)){
+                return true;
+        }
+        return false;
+    }
     //commento i metodi per non cancellarli definitivamente
-    //METHODS
+
+/*
+    public void addRoles(EmployeeRole e){
+        roles.add(e);
+    }
+
+    public void removeRoles(EmployeeRole e){
+        roles.remove(e);
+        */
+
     // public void addRoles(EmployeeRolesEnum e){
     // roles.add(e);
     // }
@@ -40,15 +56,14 @@ public class Employee {
     // public void removeRoles(EmployeeRolesEnum e){
     //roles.remove(e);
     //}
-
-    public double salaryCalculator(Employee employee) {
+    public double calculatorSalary() {
         double salaryBasic = 1;
         double senioritySalary = 0;
-        double salaryExtraordinary = hoursWorked - employee.getRoles().getHourWork();
         double familyAllowance;
-        switch (employee.getRoles()) {
+        double salaryExtraordinary = hoursWorked - getRoles().getHourWork();
+        switch (getRoles()) {
             case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
-                salaryBasic = employee.getRoles().getSalaryHour() * employee.getRoles().getHourWork();
+                salaryBasic=getRoles().getSalaryHour()* getRoles().getHourWork();
             }
         }
         //questa parte degli if è da sistemare
@@ -67,12 +82,29 @@ public class Employee {
             familyAllowance = +0;
         //è da aggiungere unexception nel caso fosse minore di 0
         if (salaryExtraordinary > 0)
-            salaryExtraordinary = salaryExtraordinary * employee.getRoles().getSalaryExtraordinaryHour();
+            salaryExtraordinary = salaryExtraordinary * getRoles().getSalaryExtraordinaryHour();
 
         double totalsalary = salaryBasic + senioritySalary + familyAllowance + salaryExtraordinary;
         return totalsalary;
-    }
 
+
+    /*
+    public boolean hasPermission(Permission permission){
+        for (EmployeeRole role : roles){
+            if (role.hasPermission(permission)){
+                return true;
+            }
+        }
+        return false;
+    
+
+    public boolean hasPermission(Permission permission){
+        return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
+    }
+    */
+
+
+    }
     public void addEmployee() {
     }
 
@@ -127,8 +159,7 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-    public EmployeeRolesEnum getRoles() {
+ public EmployeeRole getRoles() {
         return roles;
     }
 
@@ -169,4 +200,6 @@ public class Employee {
                 "Phone number: " + phoneNumber + "\n" +
                 "Roles: " + roles;
     }
+
+
 }

@@ -17,7 +17,7 @@ public class TechnologyStore extends Shop {
             costProducts+= getInventory().get(i).getPrice();
         }
         for (int i = 0; i <getEmployee().size(); i++) {
-            costEmployee+=getEmployee().get(i).salaryCalculator(getEmployee().get(i));
+            costEmployee+=getEmployee().get(i).calculatorSalary();
         }
         double totalcost=costEmployee+costProducts;
         return totalcost;

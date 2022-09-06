@@ -40,7 +40,7 @@ public class Parking extends Car {
         if(parkingCapacity <= 0)
             return "Parking is full";
         else
-            return "Places : " + parkingCapacity;
+            return "Places: " + parkingCapacity;
     }
 
     public int maxPlaces(){

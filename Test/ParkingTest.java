@@ -19,7 +19,7 @@ public class ParkingTest {
         Parking p= new Parking(500,cars);
         Parking p1= new Parking(500,cars1);
 
-        Assert.assertEquals("Places : 480",p.placeParking());
+        Assert.assertEquals("Places: 480",p.placeParking());
         Assert.assertEquals("Parking is full",p1.placeParking());
     }
 

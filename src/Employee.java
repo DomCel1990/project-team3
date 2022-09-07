@@ -13,12 +13,14 @@ public class Employee {
     private int id;
     private LocalDate dateAssumption;
 
-    public Employee(){}
+    public Employee() {
+    }
 
     private String phoneNumber;
 
     private EmployeeRole roles;
-    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber,EmployeeRole roles) {
+
+    public Employee(String name, String surname, int age, int hoursWorked, boolean hasChildren, LocalDate dateAssumption, boolean isMale, int id, String phoneNumber, EmployeeRole roles) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -32,9 +34,9 @@ public class Employee {
     }
 
 
-    public boolean hasPermission(Permission permission){
-        if (roles.hasPermission(permission)){
-                return true;
+    public boolean hasPermission(Permission permission) {
+        if (roles.hasPermission(permission)) {
+            return true;
         }
         return false;
     }
@@ -56,6 +58,21 @@ public class Employee {
     // public void removeRoles(EmployeeRolesEnum e){
     //roles.remove(e);
     //}
+
+    public double stopJob() {
+        double tfr = 0;
+        double rivalutation = 0;
+        double salaryCalcolate = 0;
+        for (int i = 0; i < LocalDate.now().getYear() - dateAssumption.getYear(); i++) {
+            tfr = salaryCalcolate + calculatorSalary();
+
+            rivalutation += calculatorSalary() * (0.0225 * (0.015 + 0.0075 * (0.01 * 0.75)));
+            salaryCalcolate += calculatorSalary() + rivalutation;
+
+        }
+        return tfr;
+    }
+
     public double calculatorSalary() {
         double salaryBasic = 1;
         double senioritySalary = 0;
@@ -63,7 +80,7 @@ public class Employee {
         double salaryExtraordinary = hoursWorked - getRoles().getHourWork();
         switch (getRoles()) {
             case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
-                salaryBasic=getRoles().getSalaryHour()* getRoles().getHourWork();
+                salaryBasic = getRoles().getSalaryHour() * getRoles().getHourWork();
             }
         }
         //questa parte degli if è da sistemare
@@ -105,6 +122,7 @@ public class Employee {
 
 
     }
+
     public void addEmployee() {
     }
 
@@ -159,7 +177,8 @@ public class Employee {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
- public EmployeeRole getRoles() {
+
+    public EmployeeRole getRoles() {
         return roles;
     }
 

@@ -31,4 +31,17 @@ public class EmployeeTest {
         Assert.assertFalse(e.hasPermission(Permission.ADMIN));
     }
 
+    @Test
+    public void stopJob() {
+        Employee e = new Employee("Domenico", "Celani", 32,
+                179, true,
+                LocalDate.of(2010, 10, 23),
+                true, 12344, "33444", EmployeeRole.MANAGER);
+
+        Assert.assertTrue(e.stopJob()==25355.15414240625);
+        Assert.assertTrue(e.stopJob()>=25355);
+        Assert.assertFalse(e.stopJob()==2535);
+        Assert.assertFalse(e.stopJob()<=2535);
+    }
+
 }

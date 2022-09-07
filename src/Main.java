@@ -31,10 +31,11 @@ public class Main {
         System.out.println(t.outputCalculation());
         Employee e = new Employee("Domenico", "Celani", 32,
                 179,true,
-                LocalDate.of(2000,10,23),
-                true, 12344, "33444", EmployeeRole.CASHIER);
+                LocalDate.of(2010,10,23),
+                true, 12344, "33444", EmployeeRole.MANAGER);
 
         System.out.println(e.hasPermission(Permission.MANAGE_EMPLOYEE));
         System.out.println(e.calculatorSalary());
+        System.out.println(e.stopJob());
     }
 }

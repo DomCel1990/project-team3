@@ -1,8 +1,9 @@
 import java.util.List;
 
-public class CoffeeShop extends Shop{
+public class CoffeeShop extends Shop {
 
     private List<CoffeProduct> inventory;
+
     public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.setInventory(inventory);
@@ -10,25 +11,24 @@ public class CoffeeShop extends Shop{
 
     @Override
     public double outputCalculation() {
-        double costProducts=0;
-        double costEmployee=0;
-        for (int i = 0; i < getInventory().size() ; i++) {
-            costProducts+= getInventory().get(i).getPrice();
+        double costProducts = 0;
+        double costEmployee = 0;
+        for (int i = 0; i < getInventory().size(); i++) {
+            costProducts += getInventory().get(i).getPrice();
         }
-
-        for (int i = 0; i <getEmployee().size(); i++) {
-            costEmployee+=getEmployee().get(i).calculatorSalary();
+        for (int i = 0; i < getEmployee().size(); i++) {
+            costEmployee += getEmployee().get(i).calculatorSalary();
         }
-        double totalcost=costEmployee+costProducts;
+        double totalcost = costEmployee + costProducts;
         return totalcost;
     }
 
-    void addEmployee(int i,Employee employee){
-        getEmployee().add(i,employee);
+    void addEmployee(int i, Employee employee) {
+        getEmployee().add(i, employee);
     }
 
 
-    void removeEmployee(int i){
+    void removeEmployee(int i) {
         getEmployee().remove(i);
     }
 

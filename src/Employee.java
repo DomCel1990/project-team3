@@ -40,26 +40,8 @@ public class Employee {
         }
         return false;
     }
-    //commento i metodi per non cancellarli definitivamente
 
-/*
-    public void addRoles(EmployeeRole e){
-        roles.add(e);
-    }
-
-    public void removeRoles(EmployeeRole e){
-        roles.remove(e);
-        */
-
-    // public void addRoles(EmployeeRolesEnum e){
-    // roles.add(e);
-    // }
-
-    // public void removeRoles(EmployeeRolesEnum e){
-    //roles.remove(e);
-    //}
-
-    public double stopJob() {
+    public double calculateTfr() {
         double tfr = 0;
         double rivalutation = 0;
         double salaryCalcolate = 0;
@@ -68,22 +50,29 @@ public class Employee {
 
             rivalutation += calculatorSalary() * (0.0225 * (0.015 + 0.0075 * (0.01 * 0.75)));
             salaryCalcolate += calculatorSalary() + rivalutation;
-
         }
         return tfr;
     }
 
-    public double calculatorSalary() {
+    public double calculateBasicSalary() {
         double salaryBasic = 1;
-        double senioritySalary = 0;
-        double familyAllowance;
-        double salaryExtraordinary = hoursWorked - getRoles().getHourWork();
         switch (getRoles()) {
             case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
                 salaryBasic = getRoles().getSalaryHour() * getRoles().getHourWork();
             }
         }
-        //questa parte degli if è da sistemare
+        return salaryBasic;
+    }
+
+    public double calculateExtraordinarySalary() {
+        double salaryExtraordinary = hoursWorked - getRoles().getHourWork();
+        if (salaryExtraordinary > 0)
+            salaryExtraordinary = salaryExtraordinary * getRoles().getSalaryExtraordinaryHour();
+        return salaryExtraordinary;
+    }
+
+    public double calculateSenioritySalary() {
+        double senioritySalary = 0;
         if (LocalDate.now().getYear() - dateAssumption.getYear() <= 5)
             senioritySalary += 0;
         else if (LocalDate.now().getYear() - dateAssumption.getYear() > 5 && LocalDate.now().getYear() - dateAssumption.getYear() <= 10)
@@ -92,35 +81,20 @@ public class Employee {
             senioritySalary += 200;
         else if (LocalDate.now().getYear() - dateAssumption.getYear() > 15)
             senioritySalary += 300;
-
-        if (hasChildren == true)
-            familyAllowance = +200;
-        else
-            familyAllowance = +0;
-        //è da aggiungere unexception nel caso fosse minore di 0
-        if (salaryExtraordinary > 0)
-            salaryExtraordinary = salaryExtraordinary * getRoles().getSalaryExtraordinaryHour();
-
-        double totalsalary = salaryBasic + senioritySalary + familyAllowance + salaryExtraordinary;
-        return totalsalary;
-
-
-    /*
-    public boolean hasPermission(Permission permission){
-        for (EmployeeRole role : roles){
-            if (role.hasPermission(permission)){
-                return true;
-            }
-        }
-        return false;
-    
-
-    public boolean hasPermission(Permission permission){
-        return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
+        return senioritySalary;
     }
-    */
 
+    public double hasCheckFamily() {
+        double familyAllowance;
+        if (hasChildren == true)
+            return familyAllowance = +200;
+        else
+            return familyAllowance = +0;
+    }
 
+    public double calculatorSalary() {
+        double totalsalary = hasCheckFamily() + calculateSenioritySalary() + calculateBasicSalary() + calculateExtraordinarySalary();
+        return totalsalary;
     }
 
     public void addEmployee() {

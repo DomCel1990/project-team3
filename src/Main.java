@@ -36,6 +36,6 @@ public class Main {
 
         System.out.println(e.hasPermission(Permission.MANAGE_EMPLOYEE));
         System.out.println(e.calculatorSalary());
-        System.out.println(e.stopJob());
+
     }
 }

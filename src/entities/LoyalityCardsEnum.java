@@ -1,3 +1,5 @@
+package entities;
+
 public enum LoyalityCardsEnum {
 
     STANDARDCARD(true, false, 0.0),

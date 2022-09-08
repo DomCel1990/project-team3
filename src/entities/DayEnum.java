@@ -1,3 +1,5 @@
+package entities;
+
 import java.time.LocalTime;
 
 public enum DayEnum {

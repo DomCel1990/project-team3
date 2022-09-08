@@ -1,3 +1,5 @@
+package entities;
+
 import java.util.List;
 
 public class CoffeeShop extends Shop {
@@ -39,7 +41,7 @@ public class CoffeeShop extends Shop {
 
     @Override
     public String toString() {
-        return "CoffeeShop : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
+        return "entities.CoffeeShop : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 
     public List<CoffeProduct> getInventory() {

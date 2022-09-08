@@ -1,3 +1,5 @@
+import entities.Car;
+import entities.Parking;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +26,7 @@ class ParkingTest {
             cars1.add(i, new Car());
         }
         Parking p1 = new Parking(500, cars1);
-        Assertions.assertEquals("Parking is full", p1.placeParking());
+        Assertions.assertEquals("entities.Parking is full", p1.placeParking());
     }
 
 

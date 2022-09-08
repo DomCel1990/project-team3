@@ -1,4 +1,6 @@
-public class CoffeProduct extends Product{
+package entities;
+
+public class CoffeProduct extends Product {
 
 
     public CoffeProduct(String description, double price, double salePrice, String type, String serialCode) {

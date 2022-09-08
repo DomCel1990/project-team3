@@ -1,3 +1,8 @@
+package entities;
+
+import entities.DayEnum;
+import entities.Employee;
+
 import java.util.List;
 
 public abstract class Shop {

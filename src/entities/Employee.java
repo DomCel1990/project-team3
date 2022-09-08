@@ -1,3 +1,5 @@
+package entities;
+
 import java.time.LocalDate;
 import java.util.EnumSet;
 
@@ -43,11 +45,11 @@ public class Employee {
     //commento i metodi per non cancellarli definitivamente
 
 /*
-    public void addRoles(EmployeeRole e){
+    public void addRoles(entities.EmployeeRole e){
         roles.add(e);
     }
 
-    public void removeRoles(EmployeeRole e){
+    public void removeRoles(entities.EmployeeRole e){
         roles.remove(e);
         */
 
@@ -106,8 +108,8 @@ public class Employee {
 
 
     /*
-    public boolean hasPermission(Permission permission){
-        for (EmployeeRole role : roles){
+    public boolean hasPermission(entities.Permission permission){
+        for (entities.EmployeeRole role : roles){
             if (role.hasPermission(permission)){
                 return true;
             }
@@ -115,7 +117,7 @@ public class Employee {
         return false;
     
 
-    public boolean hasPermission(Permission permission){
+    public boolean hasPermission(entities.Permission permission){
         return roles.stream().anyMatch(employeeRole -> employeeRole.hasPermission(permission));
     }
     */

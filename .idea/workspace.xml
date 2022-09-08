@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="-m &quot;feat: Added class abstract Product&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/CoffeProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/CoffeeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DayEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/DayEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EmployeeRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoyalityCardsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/LoyalityCardsEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/TechnologyStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/TecnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ParkingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ParkingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="CorrectionTestParking" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,9 +52,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.ParkingTest.maxPlaces">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="entities.Main" />
       <module name="project-team3" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ParkingTest.maxPlaces" />
         <item itemvalue="JUnit.EmployeeTest.stopJob" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ParkingTest.placeParking" />
         <item itemvalue="JUnit.ParkingTest" />
       </list>

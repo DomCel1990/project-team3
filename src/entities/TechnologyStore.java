@@ -1,3 +1,9 @@
+package entities;
+
+import entities.DayEnum;
+import entities.Employee;
+import entities.Shop;
+
 import java.util.List;
 
 public class TechnologyStore extends Shop {
@@ -41,7 +47,7 @@ public class TechnologyStore extends Shop {
 
     @Override
     public String toString() {
-        return "TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
+        return "entities.TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 
     public List<TecnologyProducts> getInventory() {

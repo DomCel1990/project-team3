@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: add method stopJob and test">
-      <change afterPath="$PROJECT_DIR$/test/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ParkingTest.java" afterDir="false" />
+    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="-m &quot;feat: Added class abstract Product&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/EmployeeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/ParkingTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/employeeV1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-team3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-team3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ParkingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ParkingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +18,6 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,39 +38,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.EmployeeTest">
+  <component name="RunManager" selected="JUnit.ParkingTest.maxPlaces">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="project-team3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +65,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParkingTest.maxPlaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkingTest" />
+      <option name="METHOD_NAME" value="maxPlaces" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParkingTest.placeParking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-team3" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,31 +87,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmployeeTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ParkingTest" />
+        <item itemvalue="JUnit.ParkingTest.maxPlaces" />
         <item itemvalue="JUnit.EmployeeTest.stopJob" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ParkingTest.placeParking" />
+        <item itemvalue="JUnit.ParkingTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="" />
+      <changelist id="f7bcab5f-95c8-4cea-9e4a-278cba703c53" name="Changes" comment="-m &quot;feat: Added class abstract Product&quot;" />
       <created>1662477499913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662477499913</updated>
     </task>
-    <task id="LOCAL-00001" summary="feat: add method stopJob and test">
-      <created>1662552673541</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662552673541</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,9 +128,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add method stopJob and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add method stopJob and test" />
   </component>
 </project>

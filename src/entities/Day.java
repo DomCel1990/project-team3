@@ -2,7 +2,7 @@ package entities;
 
 import java.time.LocalTime;
 
-public enum DayEnum {
+public enum Day {
     MONDAY(LocalTime.of(9, 0), LocalTime.of(21, 30)),
     TUESDAY(LocalTime.of(9, 0), LocalTime.of(21, 30)),
     WEDNESDAY(LocalTime.of(9, 0), LocalTime.of(21, 30)),
@@ -13,7 +13,7 @@ public enum DayEnum {
     final LocalTime openinigTime;
     final LocalTime closeningTime;
 
-    DayEnum(LocalTime openinigTime, LocalTime closeningTime) {
+    Day(LocalTime openinigTime, LocalTime closeningTime) {
         this.openinigTime = openinigTime;
         this.closeningTime = closeningTime;
     }

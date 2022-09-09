@@ -27,7 +27,7 @@ public class Main {
         System.out.println(techProductList);
 
         TechnologyStore t = new TechnologyStore("dd","sdd",techProductList,"323",
-                "www.ddldl.co",employeeList, DayEnum.FRIDAY);
+                "www.ddldl.co",employeeList, Day.FRIDAY);
 
         System.out.println(t.outputCalculation());
         System.out.println(t.outputCalculation());

@@ -1,16 +1,12 @@
 package entities;
 
-import entities.DayEnum;
-import entities.Employee;
-import entities.Shop;
-
 import java.util.List;
 
 public class TechnologyStore extends Shop {
     private List<TecnologyProducts> inventory;
 
     public TechnologyStore(String name, String address, List<TecnologyProducts> inventory,
-                           String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
+                           String numberToContact, String webSite, List<Employee> employee, Day day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.setInventory(inventory);
     }

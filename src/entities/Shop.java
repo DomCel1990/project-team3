@@ -1,7 +1,5 @@
 package entities;
 
-import entities.Employee;
-
 import java.util.List;
 
 public abstract class Shop {
@@ -11,9 +9,9 @@ public abstract class Shop {
     private String numberToContact;
     private String webSite;
     private List<Employee> employee;
-    private DayEnum day;
+    private Day day;
 
-    public Shop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
+    public Shop(String name, String address, String numberToContact, String webSite, List<Employee> employee, Day day) {
         this.name = name;
         this.address = address;
         this.numberToContact = numberToContact;
@@ -63,11 +61,11 @@ public abstract class Shop {
     }
 
 
-    public DayEnum getDay() {
+    public Day getDay() {
         return day;
     }
 
-    public void setDay(DayEnum day) {
+    public void setDay(Day day) {
         this.day = day;
     }
 

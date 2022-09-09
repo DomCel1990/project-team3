@@ -1,6 +1,6 @@
 package entities;
 
-public enum LoyalityCardsEnum {
+public enum LoyaltyCard {
 
     STANDARDCARD(true, false, 0.0),
     PREMIUMCARD(true, true, 0.05),
@@ -9,7 +9,7 @@ public enum LoyalityCardsEnum {
     final private boolean discount;
     final private double discountValuePercent;
 
-    LoyalityCardsEnum(boolean pointCollection, boolean discount, double discountValuePercent) {
+    LoyaltyCard(boolean pointCollection, boolean discount, double discountValuePercent) {
         this.pointCollection = pointCollection;
         this.discountValuePercent = discountValuePercent;
         this.discount = discount;

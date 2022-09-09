@@ -1,16 +1,12 @@
 package entities;
 
-import entities.DayEnum;
-import entities.Employee;
-import entities.Shop;
-
 import java.util.List;
 
 public class CoffeeShop extends Shop {
 
     private List<CoffeProduct> inventory;
 
-    public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, DayEnum day) {
+    public CoffeeShop(String name, String address, String numberToContact, String webSite, List<Employee> employee, Day day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.setInventory(inventory);
     }

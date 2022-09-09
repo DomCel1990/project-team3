@@ -1,4 +1,8 @@
-public class TecnologyProducts extends Product{
+package entities;
+
+import entities.Product;
+
+public class TecnologyProducts extends Product {
 
 
     public TecnologyProducts(String description, double price, double salePrice, String type, String serialCode) {

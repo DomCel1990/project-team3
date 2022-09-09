@@ -1,3 +1,7 @@
+package entities;
+
+import entities.Employee;
+
 import java.util.List;
 
 public abstract class Shop {
@@ -19,6 +23,7 @@ public abstract class Shop {
     }
 
     public abstract double outputCalculation();
+
 
     public abstract String averageMarks();
 

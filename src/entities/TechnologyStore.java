@@ -1,3 +1,9 @@
+package entities;
+
+import entities.DayEnum;
+import entities.Employee;
+import entities.Shop;
+
 import java.util.List;
 
 public class TechnologyStore extends Shop {
@@ -8,6 +14,7 @@ public class TechnologyStore extends Shop {
         super(name, address, numberToContact, webSite, employee, day);
         this.setInventory(inventory);
     }
+
 
     @Override
     public double outputCalculation() {
@@ -27,13 +34,14 @@ public class TechnologyStore extends Shop {
         getEmployee().add(i, employee);
     }
 
-    void removeEmployee(int i) {
+    public void removeEmployee(int i) {
         getEmployee().remove(i);
     }
 
     public void addTechnologyProducts(int i, TecnologyProducts inventory) {
         getInventory().add(i,inventory);
     }
+
     @Override
     public String averageMarks() {
         return null;
@@ -41,7 +49,7 @@ public class TechnologyStore extends Shop {
 
     @Override
     public String toString() {
-        return "TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
+        return "entities.TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 
     public List<TecnologyProducts> getInventory() {

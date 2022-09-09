@@ -1,8 +1,12 @@
+package entities;
+
+import entities.Car;
+
 import java.util.List;
 
 /**
  * @Author Emilio
- * Created Class Parking
+ * Created Class entities.Parking
  */
 
 public class Parking extends Car {
@@ -38,7 +42,7 @@ public class Parking extends Car {
     public String placeParking(){
         parkingCapacity = parkingCapacity - cars.size();
         if(parkingCapacity <= 0)
-            return "Parking is full";
+            return "entities.Parking is full";
         else
             return "Places: " + parkingCapacity;
     }

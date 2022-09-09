@@ -1,3 +1,5 @@
+package entities;
+
 public abstract class Product {
 
     private String description;
@@ -13,6 +15,8 @@ public abstract class Product {
         this.type = type;
         this.serialCode = serialCode;
     }
+
+    
 
     @Override
     public String toString() {

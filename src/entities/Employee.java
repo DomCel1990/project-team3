@@ -1,5 +1,9 @@
+package entities;
+
 import java.time.LocalDate;
 import java.util.EnumSet;
+
+import static entities.EmployeeRole.*;
 
 public class Employee {
 

@@ -15,6 +15,11 @@ public abstract class Product {
         this.type = type;
         this.serialCode = serialCode;
     }
+    public abstract double calculateProfit();
+
+    public abstract boolean convenientProduct();
+
+    public abstract String descriptionMaximum();
 
     
 

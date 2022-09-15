@@ -1,4 +1,4 @@
-package entities;
+package Staff;
 
 public enum Permission {
     ADMIN,

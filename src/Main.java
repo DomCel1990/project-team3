@@ -1,4 +1,8 @@
-import entities.*;
+import Staff.Day;
+import Staff.Employee;
+import Staff.EmployeeRole;
+import Staff.Permission;
+import Workshops.TechnologyStore;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

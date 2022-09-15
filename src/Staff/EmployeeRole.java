@@ -1,4 +1,4 @@
-package entities;
+package Staff;
 
 import java.util.List;
 import java.util.Random;

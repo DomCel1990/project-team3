@@ -1,5 +1,5 @@
-import entities.Car;
-import entities.Parking;
+import Outside.Car;
+import Outside.Parking;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

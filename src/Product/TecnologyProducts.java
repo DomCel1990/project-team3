@@ -1,6 +1,4 @@
-package entities;
-
-import entities.Product;
+package Product;
 
 public class TecnologyProducts extends Product {
 

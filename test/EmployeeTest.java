@@ -1,6 +1,6 @@
-import entities.Employee;
-import entities.EmployeeRole;
-import entities.Permission;
+import Staff.Employee;
+import Staff.EmployeeRole;
+import Staff.Permission;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,9 +1,6 @@
-package entities;
-
-import java.util.Random;
+package Outside;
 
 public class Car {
-
 
     /*
      List<entities.Car> cars= new ArrayList<>();

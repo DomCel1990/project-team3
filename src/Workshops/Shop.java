@@ -1,4 +1,7 @@
-package entities;
+package Workshops;
+
+import Staff.Day;
+import Staff.Employee;
 
 import java.util.List;
 

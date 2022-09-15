@@ -1,4 +1,4 @@
-package entities;
+package Staff;
 
 import java.time.LocalTime;
 

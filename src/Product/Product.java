@@ -15,6 +15,13 @@ public abstract class Product {
         this.type = type;
         this.serialCode = serialCode;
     }
+
+    //TEST CONSTRUCTOR
+    public Product(double price, double salePrice){
+        this.price = price;
+        this.salePrice = salePrice;
+    }
+
     public abstract double calculateProfit();
 
     public abstract boolean convenientProduct();

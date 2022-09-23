@@ -15,6 +15,10 @@ public class TechnologyStore extends Shop {
         this.setInventory(inventory);
     }
 
+    public TechnologyStore(List<Employee> employee, List<TecnologyProducts> inventory){
+        super(employee);
+        this.inventory = inventory;
+    }
 
     @Override
     public double outputCalculation() {

@@ -7,6 +7,10 @@ public class TecnologyProducts extends Product {
         super(description, price, salePrice, type, serialCode);
     }
 
+    public TecnologyProducts(double price, double salePrice){
+        super (price, salePrice);
+    }
+
     @Override
     public double calculateProfit() {
         return getSalePrice() - getPrice();

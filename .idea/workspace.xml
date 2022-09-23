@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: fixed small errors">
-      <change afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
+    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: add class client and its methods">
+      <change afterPath="$PROJECT_DIR$/test/TechnologyStoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/CoffeProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/CoffeProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/TecnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-team3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-team3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/TecnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Staff/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Staff/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workshops/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -60,42 +67,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductTest">
+  <component name="RunManager" selected="JUnit.TechnologyStoreTest">
     <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-team3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.convenientProduct_IsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="convenientProduct_IsFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.convenientProduct_IsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="convenientProduct_IsTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.descriptionMaximum_isCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="descriptionMaximum_isCorrect" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,13 +87,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TechnologyStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TechnologyStoreTest.outputCalculation_VerifyIfNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="METHOD_NAME" value="outputCalculation_VerifyIfNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TechnologyStoreTest.outputCalculation_VerifyIfPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="METHOD_NAME" value="outputCalculation_VerifyIfPositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TechnologyStoreTest" />
+        <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfPositive" />
+        <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfNegative" />
         <item itemvalue="JUnit.ProductTest" />
         <item itemvalue="JUnit.ProductTest.descriptionMaximum_isIncorrect" />
-        <item itemvalue="JUnit.ProductTest.descriptionMaximum_isCorrect" />
-        <item itemvalue="JUnit.ProductTest.convenientProduct_IsFalse" />
-        <item itemvalue="JUnit.ProductTest.convenientProduct_IsTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -188,8 +194,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
-          <line>16</line>
-          <properties class="ProductTest" method="convenientProduct_IsTrue">
+          <line>13</line>
+          <properties class="ProductTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -197,8 +203,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
-          <line>31</line>
-          <properties class="ProductTest" method="descriptionMaximum_isIncorrect">
+          <line>28</line>
+          <properties class="ProductTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

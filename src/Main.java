@@ -1,4 +1,4 @@
-import Product.TecnologyProducts;
+import Product.TechnologyProducts;
 import Staff.Day;
 import Staff.Employee;
 import Staff.EmployeeRole;
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Random r = new Random();
 
-        List<TecnologyProducts> techProductList=new ArrayList<>();
+        List<TechnologyProducts> techProductList=new ArrayList<>();
         List<Employee> employeeList=new ArrayList<>();
         for (int i = 0; i <1 ; i++) {
             employeeList.add(i,new Employee("Domenico","Celani",32,r.nextInt(167,188),r.nextBoolean(),
@@ -24,7 +24,7 @@ public class Main {
 
 
         for (int i = 0; i <1 ; i++) {
-            techProductList.add(i,new TecnologyProducts("fdff",r.nextDouble(200.0,5000.0),
+            techProductList.add(i,new TechnologyProducts("fdff",r.nextDouble(200.0,5000.0),
                     r.nextDouble(400.0,6000.0),"dgf","fdfddf"));
         }
 

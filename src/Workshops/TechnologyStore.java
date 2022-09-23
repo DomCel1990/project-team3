@@ -2,20 +2,20 @@ package Workshops;
 
 import Staff.Day;
 import Staff.Employee;
-import Product.TecnologyProducts;
+import Product.TechnologyProducts;
 
 import java.util.List;
 
 public class TechnologyStore extends Shop {
-    private List<TecnologyProducts> inventory;
+    private List<TechnologyProducts> inventory;
 
-    public TechnologyStore(String name, String address, List<TecnologyProducts> inventory,
+    public TechnologyStore(String name, String address, List<TechnologyProducts> inventory,
                            String numberToContact, String webSite, List<Employee> employee, Day day) {
         super(name, address, numberToContact, webSite, employee, day);
         this.setInventory(inventory);
     }
 
-    public TechnologyStore(List<Employee> employee, List<TecnologyProducts> inventory){
+    public TechnologyStore(List<Employee> employee, List<TechnologyProducts> inventory){
         super(employee);
         this.inventory = inventory;
     }
@@ -42,7 +42,7 @@ public class TechnologyStore extends Shop {
         getEmployee().remove(i);
     }
 
-    public void addTechnologyProducts(int i, TecnologyProducts inventory) {
+    public void addTechnologyProducts(int i, TechnologyProducts inventory) {
         getInventory().add(i,inventory);
     }
 
@@ -56,11 +56,11 @@ public class TechnologyStore extends Shop {
         return "workshops.TechnologyStore : " + getName() + " " + getEmployee() + " " + getDay() + " " + getNumberToContact();
     }
 
-    public List<TecnologyProducts> getInventory() {
+    public List<TechnologyProducts> getInventory() {
         return inventory;
     }
 
-    public void setInventory(List<TecnologyProducts> inventory) {
+    public void setInventory(List<TechnologyProducts> inventory) {
         this.inventory = inventory;
     }
 }

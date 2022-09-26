@@ -23,8 +23,11 @@ public abstract class Shop {
         this.day = day;
     }
 
-    public abstract double outputCalculation();
+    public Shop(List<Employee> employee){
+        this.setEmployee(employee);
+    }
 
+    public abstract double outputCalculation();
 
     public abstract String averageMarks();
 

@@ -14,7 +14,11 @@ public class Employee {
     private int id;
     private LocalDate dateAssumption;
 
-    public Employee() {
+    public Employee(int hoursWorked, boolean hasChildren, LocalDate dateAssumption, EmployeeRole roles) {
+        this.hoursWorked = hoursWorked;
+        this.hasChildren = hasChildren;
+        this.dateAssumption = dateAssumption;
+        this.roles = roles;
     }
 
     private String phoneNumber;

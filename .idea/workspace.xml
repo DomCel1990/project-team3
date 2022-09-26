@@ -28,6 +28,12 @@
       <change beforePath="$PROJECT_DIR$/test/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ParkingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ParkingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
+    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: testing techonology store">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TechnologyStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TechnologyStoreTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +76,12 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -84,9 +96,12 @@
       <recent name="" />
     </key>
   </component>
+
   <component name="RunManager" selected="Application.SQL_Tables.EmployeeSQL">
     <configuration name="SQL_Tables.EmployeeSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SQL_Tables.EmployeeSQL" />
+  <component name="RunManager" selected="JUnit.TechnologyStoreTest">
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-team3" />
       <extension name="coverage">
         <pattern>
@@ -94,36 +109,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.convenientProduct_IsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="convenientProduct_IsFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.convenientProduct_IsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="convenientProduct_IsTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.descriptionMaximum_isCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="project-team3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="descriptionMaximum_isCorrect" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,6 +123,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TechnologyStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TechnologyStoreTest.outputCalculation_VerifyIfNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="METHOD_NAME" value="outputCalculation_VerifyIfNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TechnologyStoreTest.outputCalculation_VerifyIfPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-team3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
+      <option name="METHOD_NAME" value="outputCalculation_VerifyIfPositive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductTest.descriptionMaximum_isIncorrect" />
@@ -145,6 +159,11 @@
         <item itemvalue="JUnit.ProductTest.convenientProduct_IsTrue" />
         <item itemvalue="JUnit.ProductTest.convenientProduct_IsFalse" />
         <item itemvalue="Application.SQL_Tables.EmployeeSQL" />
+        <item itemvalue="JUnit.TechnologyStoreTest" />
+        <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfPositive" />
+        <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfNegative" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.ProductTest.descriptionMaximum_isIncorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662745063171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: testing techonology store">
+      <created>1663928211480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663928211480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +226,40 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add method stopJob and test" />
     <MESSAGE value="feat: fixed small errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: fixed small errors" />
+    <MESSAGE value="feat: testing techonology store" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: testing techonology store" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/EmployeeTest.java</url>
+          <line>52</line>
+          <properties class="EmployeeTest" method="hasCheckFamily_verifyCorrectValue_whenIsFalse">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
+          <line>13</line>
+          <properties class="ProductTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
+          <line>28</line>
+          <properties class="ProductTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

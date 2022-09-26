@@ -1,8 +1,8 @@
-package Workshops;
+package workshops;
 
-import Staff.Day;
-import Staff.Employee;
-import Product.TecnologyProducts;
+import staff.Day;
+import staff.Employee;
+import product.TecnologyProducts;
 
 import java.util.List;
 

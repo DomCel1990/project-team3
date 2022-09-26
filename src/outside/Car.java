@@ -1,4 +1,4 @@
-package Outside;
+package outside;
 
 public class Car {
 

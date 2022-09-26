@@ -1,4 +1,4 @@
-import Product.TecnologyProducts;
+import product.TecnologyProducts;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

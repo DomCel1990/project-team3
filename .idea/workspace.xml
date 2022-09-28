@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee16bb67-1fe2-4dac-b4c1-7024a807e307" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_08_2022_19_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_08_2022_19_45__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/LoyaltyCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/LoyaltyCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outside/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outside/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outside/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outside/Parking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/CoffeProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/CoffeProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQL_Tables/EmployeeSQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshops/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/workshops/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workshops/CoffeeShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TechnologyStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TechnologyStoreTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6e330969-05d6-446b-9acd-e7119db6ac3c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,12 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/project-team3" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -132,6 +110,19 @@
       <option name="MAIN_CLASS_NAME" value="TechnologyStoreTest" />
       <option name="METHOD_NAME" value="outputCalculation_VerifyIfPositive" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="project-team3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="project-team3" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

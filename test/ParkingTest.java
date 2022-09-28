@@ -1,7 +1,7 @@
-import outside.Car;
-import outside.Parking;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import outside.Car;
+import outside.Parking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ class ParkingTest {
             cars1.add(i, new Car());
         }
         Parking p1= new Parking(500,cars1);
-        Assertions.assertEquals("entities.Parking is full",p1.placeParking());
+        Assertions.assertEquals("entities.outside.Parking is full",p1.placeParking());
     }
 
     @Test

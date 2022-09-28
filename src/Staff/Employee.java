@@ -62,7 +62,7 @@ public class Employee {
     public double calculateBasicSalary() {
         double salaryBasic = 1;
         switch (getRoles()) {
-            case OWNER, MANAGER, CASHIER, SALESCLERK, DEPARTMENTHEAD, WAREHOUSEWORKER -> {
+            case EmployeeRole.OWNER, EmployeeRole.MANAGER, EmployeeRole.CASHIER, EmployeeRole.SALESCLERK, EmployeeRole.DEPARTMENTHEAD, EmployeeRole.WAREHOUSEWORKER -> {
                 salaryBasic = getRoles().getSalaryHour() * getRoles().getHourWork();
             }
         }

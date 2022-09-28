@@ -6,10 +6,10 @@ import java.util.List;
 
 /**
  * @Author Emilio
- * Created Class entities.Parking
+ * Created Class entities.outside.Parking
  */
 
-public class Parking extends Car {
+public class Parking {
 
     private String name;
     private int floor;
@@ -42,7 +42,7 @@ public class Parking extends Car {
     public String placeParking(){
         parkingCapacity = parkingCapacity - cars.size();
         if(parkingCapacity <= 0)
-            return "entities.Parking is full";
+            return "entities.outside.Parking is full";
         else
             return "Places: " + parkingCapacity;
     }

@@ -44,7 +44,7 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client{" +
+        return "entities.Client{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +

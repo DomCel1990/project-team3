@@ -1,9 +1,8 @@
 package workshops;
 
-
+import product.CoffeProduct;
 import staff.Day;
 import staff.Employee;
-import product.CoffeProduct;
 
 import java.util.List;
 

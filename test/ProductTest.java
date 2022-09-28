@@ -1,6 +1,6 @@
-import Product.TechnologyProducts;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import product.TechnologyProducts;
 
 class ProductTest {
 

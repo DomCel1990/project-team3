@@ -1,8 +1,8 @@
-import Product.TechnologyProducts;
-import Staff.Employee;
-import Staff.EmployeeRole;
-import Workshops.TechnologyStore;
+import staff.Employee;
+import staff.EmployeeRole;
 import org.junit.jupiter.api.Assertions;
+import product.TechnologyProducts;
+import workshops.TechnologyStore;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

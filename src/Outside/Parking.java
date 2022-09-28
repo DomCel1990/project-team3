@@ -1,6 +1,6 @@
-package Outside;
+package outside;
 
-import Staff.Employee;
+import staff.Employee;
 
 import java.util.List;
 

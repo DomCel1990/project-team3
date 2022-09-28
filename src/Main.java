@@ -1,9 +1,11 @@
-import Product.TechnologyProducts;
-import Staff.Day;
-import Staff.Employee;
-import Staff.EmployeeRole;
-import Staff.Permission;
-import Workshops.TechnologyStore;
+
+import staff.Day;
+import staff.Employee;
+import staff.EmployeeRole;
+import staff.Permission;
+import product.TechnologyProducts;
+import workshops.TechnologyStore;
+
 
 import java.time.LocalDate;
 import java.util.ArrayList;

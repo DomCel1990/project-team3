@@ -1,7 +1,7 @@
-package Workshops;
+package workshops;
 
-import Staff.Day;
-import Staff.Employee;
+import staff.Day;
+import staff.Employee;
 
 import java.util.List;
 

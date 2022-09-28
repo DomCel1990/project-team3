@@ -1,14 +1,9 @@
 package product;
 
-public class TechnologyProducts extends Product {
+public class TecnologyProducts extends Product {
 
-
-    public TechnologyProducts(String description, double price, double salePrice, String type, String serialCode) {
+    public TecnologyProducts(String description, double price, double salePrice, String type, String serialCode) {
         super(description, price, salePrice, type, serialCode);
-    }
-
-    public TechnologyProducts(double price, double salePrice){
-        super (price, salePrice);
     }
 
     @Override

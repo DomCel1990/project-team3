@@ -4,34 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: fixed small errors">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ee16bb67-1fe2-4dac-b4c1-7024a807e307" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_08_2022_19_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_08_2022_19_45__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-team3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-team3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/LoyaltyCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/LoyaltyCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/LoyaltyCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/LoyaltyCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outside/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outside/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outside/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outside/Parking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/CoffeProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/CoffeProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/TecnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Outside/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outside/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Outside/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outside/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/CoffeProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/CoffeProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SQL_Tables/EmployeeSQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/Day.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staff/Day.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staff/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/EmployeeRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staff/EmployeeRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Staff/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/staff/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshops/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workshops/CoffeeShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshops/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workshops/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workshops/TechnologyStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ParkingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ParkingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
-    <list default="true" id="945a84fc-b6d0-42f2-81fe-0b402956ae35" name="Changes" comment="feat: testing techonology store">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product/TecnologyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/TechnologyProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workshops/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Workshops/TechnologyStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/workshops/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workshops/CoffeeShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/TechnologyStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TechnologyStoreTest.java" afterDir="false" />
     </list>
@@ -96,10 +83,6 @@
       <recent name="" />
     </key>
   </component>
-
-  <component name="RunManager" selected="Application.SQL_Tables.EmployeeSQL">
-    <configuration name="SQL_Tables.EmployeeSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SQL_Tables.EmployeeSQL" />
   <component name="RunManager" selected="JUnit.TechnologyStoreTest">
     <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-team3" />
@@ -109,6 +92,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,10 +139,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductTest.descriptionMaximum_isIncorrect" />
-        <item itemvalue="JUnit.ProductTest.descriptionMaximum_isCorrect" />
-        <item itemvalue="JUnit.ProductTest.convenientProduct_IsTrue" />
-        <item itemvalue="JUnit.ProductTest.convenientProduct_IsFalse" />
-        <item itemvalue="Application.SQL_Tables.EmployeeSQL" />
         <item itemvalue="JUnit.TechnologyStoreTest" />
         <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfPositive" />
         <item itemvalue="JUnit.TechnologyStoreTest.outputCalculation_VerifyIfNegative" />
@@ -244,7 +224,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
           <line>13</line>
-          <properties class="ProductTest">
+          <properties class="ProductTest" method="convenientProduct_isTrue">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -253,7 +233,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/ProductTest.java</url>
           <line>28</line>
-          <properties class="ProductTest">
+          <properties class="ProductTest" method="descriptionMaximum_isIncorrect">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

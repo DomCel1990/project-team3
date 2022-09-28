@@ -1,12 +1,13 @@
-package Workshops;
+package workshops;
 
-import Staff.Day;
-import Staff.Employee;
-import Product.TechnologyProducts;
+import staff.Day;
+import staff.Employee;
+import product.TechnologyProducts;
+
 
 import java.util.List;
 
-public class TechnologyStore extends Shop {
+public class TechnologyStore extends workshops.Shop {
     private List<TechnologyProducts> inventory;
 
     public TechnologyStore(String name, String address, List<TechnologyProducts> inventory,
